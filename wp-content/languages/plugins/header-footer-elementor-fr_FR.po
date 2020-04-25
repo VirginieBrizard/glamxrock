@@ -1,0 +1,138 @@
+# Translation of Plugins - Elementor &#8211; Header, Footer &amp; Blocks - Development (trunk) in French (France)
+# This file is distributed under the same license as the Plugins - Elementor &#8211; Header, Footer &amp; Blocks - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-12-15 11:15:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Elementor &#8211; Header, Footer &amp; Blocks - Development (trunk)\n"
+
+#. Plugin Name of the plugin
+msgid "Elementor - Header, Footer & Blocks"
+msgstr "Elementor - Header, Footer & Blocks"
+
+#: admin/class-hfe-admin.php:161
+msgid "Copy this shortcode and paste it into your post, page, or text widget content."
+msgstr "Copiez ce code court et collez-le dans votre le contenu de votre article, page ou widget texte."
+
+#: admin/class-hfe-admin.php:160 admin/class-hfe-admin.php:320
+msgid "Shortcode"
+msgstr "Code court"
+
+#: admin/class-hfe-admin.php:154
+msgid "Custom Block"
+msgstr "Bloc personnalisé"
+
+#: admin/class-hfe-admin.php:151
+msgid "Before Footer"
+msgstr "Avant le pied de page"
+
+#: admin/class-hfe-admin.php:144
+msgid "Type of Template"
+msgstr "Type de modèle"
+
+#: admin/class-hfe-admin.php:153
+msgid "Footer"
+msgstr "Pied de page"
+
+#: admin/class-hfe-admin.php:149
+msgid "Header"
+msgstr "En-tête"
+
+#: admin/class-hfe-admin.php:148
+msgid "Select Option"
+msgstr "Sélectionnez une option"
+
+#: admin/class-hfe-admin.php:175
+msgid "Enabling this option will display this layout on pages using Elementor Canvas Template."
+msgstr "Activer cette option affichera cette mise en page sur les pages utilisant le modèle Elementor Canvas."
+
+#: admin/class-hfe-admin.php:103 admin/class-hfe-admin.php:104
+msgid "Header Footer Builder"
+msgstr "Header Footer Builder"
+
+#. Translators: Post title, Template Location
+#: admin/class-hfe-admin.php:247
+msgid "Template %1$s is already assigned to the location %2$s"
+msgstr "Le modèle %1$s est déjà affecté à l’emplacement %2$s"
+
+#: admin/class-hfe-admin.php:73
+msgid "No Header Footers Templates found."
+msgstr "Aucun modèle d’en-tête ou de pied de page trouvé."
+
+#: admin/class-hfe-admin.php:71
+msgid "Search Header Footers Templates"
+msgstr "Rechercher des modèles d’en-tête et de pied de page"
+
+#: admin/class-hfe-admin.php:72
+msgid "Parent Header Footers Templates:"
+msgstr "Modèles parents d’en-tête ou pied de page :"
+
+#: admin/class-hfe-admin.php:74
+msgid "No Header Footers Templates found in Trash."
+msgstr "Aucun modèle d’en-tête ou de pied de page trouvé dans la corbeille."
+
+#. Author URI of the plugin
+msgid "https://www.brainstormforce.com/"
+msgstr "https://www.brainstormforce.com/"
+
+#. Author of the plugin
+msgid "Brainstorm Force, Nikhil Chavan"
+msgstr "Brainstorm Force, Nikhil Chavan"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/Nikschavan/header-footer-elementor"
+msgstr "https://github.com/Nikschavan/header-footer-elementor"
+
+#: admin/class-hfe-admin.php:65
+msgid "Add New"
+msgstr "Ajouter nouveau"
+
+#: inc/class-header-footer-elementor.php:222
+msgid "Hey, your current theme is not supported by Header Footer Elementor, click <a href=\"https://github.com/Nikschavan/header-footer-elementor#which-themes-are-supported-by-this-plugin\">here</a> to check out the supported themes."
+msgstr "Attention, votre thème actuel n’est pas pris en charge par Header Footer Elementor, cliquez <a href=\"https://github.com/Nikschavan/header-footer-elementor#which-themes-are-supported-by-this-plugin\">ici</a> pour vérifier les thèmes pris en charge."
+
+#. Translators: URL to install or activate Elementor plugin.
+#: inc/class-header-footer-elementor.php:101
+msgid "The <strong>Header Footer Elementor</strong> plugin requires <strong><a href=\"%s\">Elementor</strong></a> plugin installed & activated."
+msgstr "L’extension <strong>Header Footer Elementor</strong> a besoin de l’extension <strong><a href=\"%s\">Elementor</strong></a> installée et activée."
+
+#: admin/class-hfe-admin.php:116
+msgid "Elementor Header Footer options"
+msgstr "Options d’Elementor Header Footer"
+
+#: admin/class-hfe-admin.php:70
+msgid "All Elementor Header Footers"
+msgstr "Tous les pieds de page et en-têtes Elementor"
+
+#: admin/class-hfe-admin.php:69
+msgid "View Header Footers Template"
+msgstr "Voir le modèle de pied de page ou d’en-tête"
+
+#: admin/class-hfe-admin.php:68
+msgid "Edit Header Footers Template"
+msgstr "Modifier le modèle de pied de page ou d’en-tête"
+
+#: admin/class-hfe-admin.php:67
+msgid "New Header Footers Template"
+msgstr "Nouveau modèle de pied de page ou d’en-tête"
+
+#: admin/class-hfe-admin.php:66
+msgid "Add New Header Footer"
+msgstr "Ajouter un nouveau pied de page ou en-tête"
+
+#: admin/class-hfe-admin.php:62 admin/class-hfe-admin.php:64
+msgid "Elementor Header Footer"
+msgstr "En-tête ou pied de page Elementor"
+
+#: admin/class-hfe-admin.php:61 admin/class-hfe-admin.php:63
+msgid "Header Footers Template"
+msgstr "Modèle d’en-tête ou de pied de page"
+
+#. Description of the plugin
+msgid "Create Header and Footer for your site using Elementor Page Builder."
+msgstr "Créez un en-tête et un pied de page pour votre site à l’aide du constructeur de page Elementor."

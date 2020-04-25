@@ -1,0 +1,41 @@
+.navbar {
+  border-width: 0 !important;
+  background: $lightBackground !important;
+  padding: 5px;
+  .elementor-widget-image{
+  @include small{
+    position: relative;
+    top: -5px; 
+    left: -70px;
+  }
+}
+  .elementor-column-wrap{
+    height: auto;
+    max-width: 60%;
+  }
+  .elementor-column{
+    justify-content: flex-end;
+  }
+  .elementor-icon-wrapper{
+     display: none;
+  }
+  .elementor-item{
+    text-decoration: none;
+    font-weight: 700 !important;
+  }
+  .elementor-nav-menu{
+    a{
+      color: $mediumText !important;
+      font-family: 'Roboto', sans-serif;
+      &:hover{
+        color: $darkBackground !important;
+        font-weight: 900 !important;
+      }
+    }
+    &--dropdown{
+      a{
+      color: $darkBackground !important;
+      }
+    }
+  }
+}

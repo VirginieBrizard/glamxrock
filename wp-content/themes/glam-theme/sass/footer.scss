@@ -1,0 +1,29 @@
+.footer_navbar {
+    background: $lightBackground;
+    padding: 40px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    a{
+        padding: 2px;
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+    .elementor-icon-list-text{
+        color: $mediumText !important;
+        font-weight: bolder;
+        &:hover{
+            color: $darkBackground !important;
+            font-size: 1.1em;
+        }
+    }
+    .elementor-row{
+        @media (max-width: 762px) {
+            flex-direction: column !important;
+            align-items: center;
+        }
+    }
+}

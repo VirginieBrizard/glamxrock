@@ -1,0 +1,27 @@
+.vitrineAccueil{
+    &__background{ 
+        height: 500px;
+        padding: 5px;
+        .elementor-element-populated{
+            padding: 0px !important;
+        }
+        .elementor-widget-wrap{
+        h2{
+            background: rgba(255,255,255,0.2);
+            color: $lightText !important;
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin-top: 230px;
+        }
+        &:hover{
+            h2{
+                transition: 0.4s;
+                background: rgba(255,255,255,0.5);
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: $darkText;
+            }
+        }
+        }
+    }
+}

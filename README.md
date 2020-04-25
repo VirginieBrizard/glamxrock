@@ -1,2 +1,2 @@
-# glamxrock
-Glam x Rock Shop
+"# gxrprojet" 
+"# gxrprojet" 

@@ -1,0 +1,38 @@
+2020-04-06T08:57:07+00:00 CRITICAL Maximum execution time of 120 seconds exceeded dans C:\wamp64\www\glamxrock\wp-includes\Requests\Transport\cURL.php à la ligne 462
+
+2020-04-06T09:26:42+00:00 CRITICAL Uncaught Error: Call to undefined function wp_footer_menu() in C:\wamp64\www\glamxrock\wp-content\themes\glam-theme\footer.php:4
+Stack trace:
+#0 C:\wamp64\www\glamxrock\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\glamxrock\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\g...', true)
+#2 C:\wamp64\www\glamxrock\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\wamp64\www\glamxrock\wp-content\plugins\elementor\modules\page-templates\templates\header-footer.php(30): get_footer()
+#4 C:\wamp64\www\glamxrock\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\g...')
+#5 C:\wamp64\www\glamxrock\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\g...')
+#6 C:\wamp64\www\glamxrock\index.php(17): require('C:\\wamp64\\www\\g...')
+#7 {main}
+  thrown dans C:\wamp64\www\glamxrock\wp-content\themes\glam-theme\footer.php à la ligne 4
+
+2020-04-06T09:31:36+00:00 CRITICAL Uncaught Error: Call to undefined function wp_menu() in C:\wamp64\www\glamxrock\wp-content\themes\glam-theme\footer.php:4
+Stack trace:
+#0 C:\wamp64\www\glamxrock\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\glamxrock\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\g...', true)
+#2 C:\wamp64\www\glamxrock\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\wamp64\www\glamxrock\wp-content\plugins\elementor\modules\page-templates\templates\header-footer.php(30): get_footer()
+#4 C:\wamp64\www\glamxrock\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\g...')
+#5 C:\wamp64\www\glamxrock\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\g...')
+#6 C:\wamp64\www\glamxrock\index.php(17): require('C:\\wamp64\\www\\g...')
+#7 {main}
+  thrown dans C:\wamp64\www\glamxrock\wp-content\themes\glam-theme\footer.php à la ligne 4
+
+2020-04-06T11:19:08+00:00 CRITICAL Uncaught Error: Call to undefined function footer_before() in C:\wamp64\www\glamxrock\wp-content\themes\glam-theme\footer.php:1
+Stack trace:
+#0 C:\wamp64\www\glamxrock\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\glamxrock\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\g...', true)
+#2 C:\wamp64\www\glamxrock\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\wamp64\www\glamxrock\wp-content\plugins\elementor\modules\page-templates\templates\header-footer.php(30): get_footer()
+#4 C:\wamp64\www\glamxrock\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\g...')
+#5 C:\wamp64\www\glamxrock\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\g...')
+#6 C:\wamp64\www\glamxrock\index.php(17): require('C:\\wamp64\\www\\g...')
+#7 {main}
+  thrown dans C:\wamp64\www\glamxrock\wp-content\themes\glam-theme\footer.php à la ligne 1
+
