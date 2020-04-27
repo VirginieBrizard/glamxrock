@@ -427,13 +427,14 @@ class Form extends Form_Base {
 			]
 		);
 
+		$shortcode_template = '{{ view.container.settings.get( \'custom_id\' ) }}';
 		$repeater->add_control(
 			'shortcode',
 			[
 				'label' => __( 'Shortcode', 'elementor-pro' ),
 				'type' => Controls_Manager::RAW_HTML,
 				'classes' => 'forms-field-shortcode',
-				'raw' => '<input class="elementor-form-field-shortcode" value="[field id={{ view.container.settings.get( \'custom_id\' ) }}]" readonly />',
+				'raw' => '<input class="elementor-form-field-shortcode" value=\'[field id="' . $shortcode_template . '"]\' readonly />',
 			]
 		);
 

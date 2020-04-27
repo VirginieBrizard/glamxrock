@@ -1,4 +1,4 @@
-/*! elementor-pro - v2.9.2 - 25-03-2020 */
+/*! elementor-pro - v2.9.3 - 19-04-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -6117,6 +6117,15 @@ var SlidesHandler = elementorModules.frontend.handlers.Base.extend({
 
     this.$activeImageBg.addClass(settings.classes.kenBurnsActive);
   },
+  initSingleSlideAnimations: function initSingleSlideAnimations() {
+    var settings = this.getSettings(),
+        animation = this.elements.$slider.data(settings.attributes.dataAnimation);
+    this.elements.$slider.find(settings.selectors.slideBackground).addClass(settings.classes.kenBurnsActive); // If there is an animation, get the container of the slide's inner contents and add the animation classes to it
+
+    if (animation) {
+      this.elements.$slider.find(settings.selectors.slideInnerContents).addClass(settings.classes.animated + ' ' + animation);
+    }
+  },
   initSlider: function initSlider() {
     var _this2 = this;
 
@@ -6137,21 +6146,10 @@ var SlidesHandler = elementorModules.frontend.handlers.Base.extend({
 
     this.swipers.main = new Swiper($slider, this.getSwiperOptions()); // Expose the swiper instance in the frontend
 
-    $slider.data('swiper', this.swipers.main);
-
-    if (!animation) {
-      return;
-    }
+    $slider.data('swiper', this.swipers.main); // The Ken Burns effect will only apply on the specific slides that toggled the effect ON,
+    // since it depends on an additional class besides 'elementor-ken-burns--active'
 
     this.handleKenBurns();
-    this.swipers.main.on('slideChangeTransitionStart', function () {
-      var $sliderContent = $slider.find(settings.selectors.slideInnerContents);
-      $sliderContent.removeClass(settings.classes.animated + ' ' + animation).hide();
-    });
-    this.swipers.main.on('slideChangeTransitionEnd', function () {
-      var $currentSlide = $slider.find(settings.selectors.slideInnerContents);
-      $currentSlide.show().addClass(settings.classes.animated + ' ' + animation);
-    });
 
     if (elementSettings.pause_on_hover) {
       $slider.on({
@@ -6163,11 +6161,25 @@ var SlidesHandler = elementorModules.frontend.handlers.Base.extend({
         }
       });
     }
+
+    if (!animation) {
+      return;
+    }
+
+    this.swipers.main.on('slideChangeTransitionStart', function () {
+      var $sliderContent = $slider.find(settings.selectors.slideInnerContents);
+      $sliderContent.removeClass(settings.classes.animated + ' ' + animation).hide();
+    });
+    this.swipers.main.on('slideChangeTransitionEnd', function () {
+      var $currentSlide = $slider.find(settings.selectors.slideInnerContents);
+      $currentSlide.show().addClass(settings.classes.animated + ' ' + animation);
+    });
   },
   onInit: function onInit() {
     elementorModules.frontend.handlers.Base.prototype.onInit.apply(this, arguments);
 
     if (2 > this.getSlidesCount()) {
+      this.initSingleSlideAnimations();
       return;
     }
 

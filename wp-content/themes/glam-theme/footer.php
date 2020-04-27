@@ -1,5 +1,5 @@
 <?php wp_footer();?>
-<footer  role="contentinfo" class="footer_navbar">
+<footer role="contentinfo" class="footer_navbar">
     <div class="footer_container">
         <?php  wp_nav_menu (
             array(

@@ -52,6 +52,9 @@ register_nav_menus(
 add_theme_support('post-thumbnails');
 add_image_size('smallest', 300, 300, true);
 add_image_size('largest', 800, 800, true);
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
 
 
 // WIDGETS
@@ -76,5 +79,20 @@ function my_sidebars(){
             'after_title' => '</h4>'
         )
     );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Footer Widgets', 'carbon' ),
+        'id'            => 'footer-widget',
+        'description'   => esc_html__( 'Add widgets you want in the footer here.', 'carbon' ),
+       'before_widget' => '<section id="%1$s" class="widget footer-widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title h5">',
+        'after_title'   => '</h2>',
+    ) );
 }
 add_action('widgets_init', 'my_sidebars');
+
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );

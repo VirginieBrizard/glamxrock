@@ -1,5 +1,12 @@
 # Elementor Pro - by Elementor.com
 
+#### 2.9.3 - 2020-04-19
+* Fix: Form shortcode IDs are not wrapped in double-quotes ([#11023](https://github.com/elementor/elementor/issues/11023), [#10932](https://github.com/elementor/elementor/issues/10932), [#10967](https://github.com/elementor/elementor/issues/10967), [#11000](https://github.com/elementor/elementor/issues/11000), [#11049](https://github.com/elementor/elementor/issues/11049))
+* Fix: Escaped Form records metadata to prevent security vulnerability
+* Fix: Closing "Save Changes" document confirmation modal causes Panel infinite loading
+* Fix: Ken Burns effect not working when there is only one slide in Slides widget
+* Fix: Document handles UI glitch
+
 #### 2.9.2 - 2020-03-25
 * Tweak: Added compatibility with WordPress v5.4 ([#10745](https://github.com/elementor/elementor/issues/10745))
 * Fix: Image ratio number is displayed under the Archive Posts widget ([#10874](https://github.com/elementor/elementor/issues/10874))

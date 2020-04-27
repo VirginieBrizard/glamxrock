@@ -1,6 +1,5 @@
 .footer_navbar {
   background: #eee6DD;
-  padding: 40px 20px 0 20px;
   display: flex;
   flex-direction: row;
   font-family: "Roboto", sans-serif;
@@ -32,6 +31,7 @@
   border-width: 0 !important;
   background: #eee6DD !important;
   padding: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 762px) {
   .navbar .elementor-widget-image {
@@ -86,6 +86,21 @@
   background: rgba(255, 255, 255, 0.5);
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #0f1c1d;
+}
+
+.filter-widget .widget {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+}
+
+.hero {
+  height: 100px !important;
+  width: 100%;
+  background-color: pink;
 }
 
 /*# sourceMappingURL=style.css.map */

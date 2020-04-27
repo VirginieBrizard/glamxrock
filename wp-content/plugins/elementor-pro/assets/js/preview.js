@@ -1,4 +1,4 @@
-/*! elementor-pro - v2.9.2 - 25-03-2020 */
+/*! elementor-pro - v2.9.3 - 19-04-2020 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -192,7 +192,7 @@ var Preview = /*#__PURE__*/function (_elementorModules$Vie) {
       elementorCommon.api.internal('panel/state-loading');
       elementorCommon.api.run('editor/documents/switch', {
         id: document.getSettings('id')
-      }).then(function () {
+      }).finally(function () {
         return elementorCommon.api.internal('panel/state-ready');
       });
     }
